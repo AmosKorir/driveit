@@ -1,0 +1,21 @@
+<resources>
+	<string name="app_name">Bookit</string>
+	<string name="forgot_password">Forgot Password</string>
+	<string name="log_in">LOG IN</string>
+	<string name="username">username</string>
+	<string name="password">password</string>
+	<string name="setting"> Setting</string>
+	<string name="home"> Home</string>
+	<string name="search"> Search</string>
+	<string name="account"> Account</string>
+	<!-- TODO: Remove or change this placeholder text -->
+	<string name="hello_blank_fragment">Hello blank fragment</string>
+	<string name="my_garage">My Garage</string>
+	<string name="long_term_short_term">Long term, Short term</string>
+	<string name="availabe_cars">Availabe Cars</string>
+	<string name="top_deals">TOP DEALs</string>
+	<string name="more">More</string>
+	<string name="best_match">Best Match</string>
+	<string name="lowest_price">Lowest Price</string>
+	<string name="gold">Gold</string>
+</resources>
