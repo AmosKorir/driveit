@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
 import com.bookit.domain.Car
 import com.bookit.koriramos.R
-import com.bookit.koriramos.adapter.CarsRecyclerviewAdapter
+import com.bookit.koriramos.adapter.GridCarsRecyclerviewAdapter
 import com.bookit.koriramos.viewmodels.MainViewModel
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
@@ -36,6 +36,6 @@ class AvailableActivity : AppCompatActivity() {
 	}
 	
 	private fun showTopDealsCars(cars: List<Car>) {
-		carsRecyclerView.adapter = CarsRecyclerviewAdapter(this, cars)
+		carsRecyclerView.adapter = GridCarsRecyclerviewAdapter(this, cars)
 	}
 }
