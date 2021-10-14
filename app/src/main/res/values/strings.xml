@@ -1,5 +1,5 @@
 <resources>
-	<string name="app_name">Bookit</string>
+	<string name="app_name">Driveit</string>
 	<string name="forgot_password">Forgot Password</string>
 	<string name="log_in">LOG IN</string>
 	<string name="username">username</string>
@@ -12,8 +12,8 @@
 	<string name="hello_blank_fragment">Hello blank fragment</string>
 	<string name="my_garage">My Garage</string>
 	<string name="long_term_short_term">Long term, Short term</string>
-	<string name="availabe_cars">Availabe Cars</string>
-	<string name="top_deals">TOP DEALs</string>
+	<string name="availabe_cars">Available Cars</string>
+	<string name="top_deals">TOP DEALS</string>
 	<string name="more">More</string>
 	<string name="best_match">Best Match</string>
 	<string name="lowest_price">Lowest Price</string>

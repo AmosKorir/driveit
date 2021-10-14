@@ -16,6 +16,7 @@
 			app:navGraph="@navigation/navhost"
 			/>
 	<RadioGroup
+			android:id="@+id/bottomRadioGroup"
 			android:layout_width="match_parent"
 			android:layout_height="100dp"
 			android:background="@drawable/bottom_navigation_background"
@@ -25,18 +26,18 @@
 			>
 		<com.bookit.koriramos.custom_view.CustomRadioGroup
 				android:id="@+id/home"
-				android:checked="true"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
+				android:layout_weight="1"
 				android:background="@drawable/radio_flat_selector"
 				android:button="@android:color/transparent"
-				android:drawableStart="@drawable/home"
+				android:checked="true"
 				android:drawablePadding="4dp"
-				android:textStyle="bold"
-				android:textColor="@color/radio_selector"
+				android:drawableStart="@drawable/home"
 				android:drawableTint="@color/radio_selector"
 				android:text="@string/home"
-				android:layout_weight="1"
+				android:textColor="@color/radio_selector"
+				android:textStyle="bold"
 				tools:targetApi="m"
 				/>
 		
@@ -44,30 +45,30 @@
 				android:id="@+id/setting"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
+				android:layout_weight="1"
 				android:background="@drawable/radio_flat_selector"
 				android:button="@android:color/transparent"
-				android:drawableStart="@drawable/setting"
 				android:drawablePadding="4dp"
-				android:textStyle="bold"
-				android:textColor="@color/radio_selector"
+				android:drawableStart="@drawable/setting"
 				android:drawableTint="@color/radio_selector"
-				android:layout_weight="1"
 				android:text="@string/setting"
+				android:textColor="@color/radio_selector"
+				android:textStyle="bold"
 				/>
 		
 		<com.bookit.koriramos.custom_view.CustomRadioGroup
 				android:id="@+id/search"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
+				android:layout_weight="1"
 				android:background="@drawable/radio_flat_selector"
 				android:button="@android:color/transparent"
-				android:drawableStart="@drawable/ic_baseline_search_24"
-				android:text="@string/search"
 				android:drawablePadding="4dp"
-				android:textStyle="bold"
-				android:textColor="@color/radio_selector"
+				android:drawableStart="@drawable/ic_baseline_search_24"
 				android:drawableTint="@color/radio_selector"
-				android:layout_weight="1"
+				android:text="@string/search"
+				android:textColor="@color/radio_selector"
+				android:textStyle="bold"
 				/>
 		
 		
@@ -75,15 +76,16 @@
 				android:id="@+id/account"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
+				android:layout_weight="1"
 				android:background="@drawable/radio_flat_selector"
 				android:button="@android:color/transparent"
-				android:drawableStart="@drawable/ic_baseline_person_outline_24"
 				android:drawablePadding="4dp"
-				android:textStyle="bold"
-				android:textColor="@color/radio_selector"
+				app:customTypeface="1"
+				android:drawableStart="@drawable/ic_baseline_person_outline_24"
 				android:drawableTint="@color/radio_selector"
 				android:text="@string/account"
-				android:layout_weight="1"
+				android:textColor="@color/radio_selector"
+				android:textStyle="bold"
 				>
 		
 		</com.bookit.koriramos.custom_view.CustomRadioGroup>
