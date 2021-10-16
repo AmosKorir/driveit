@@ -28,7 +28,6 @@
 					android:orientation="horizontal"
 					>
 				<RadioButton
-						android:paddingStart="32dp"
 						android:id="@+id/radioButton"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
@@ -36,18 +35,19 @@
 						android:backgroundTint="@color/radio_selector"
 						android:button="@android:color/transparent"
 						android:checked="true"
+						android:paddingStart="32dp"
 						android:text="@string/best_match"
 						android:textColor="@color/radio_selector"
 						android:textStyle="bold"
 						/>
 				<RadioButton
-						android:paddingStart="16dp"
 						android:layout_width="wrap_content"
 						android:layout_height="wrap_content"
 						android:layout_weight="1"
 						android:backgroundTint="@color/radio_selector"
 						android:button="@android:color/transparent"
-						android:text="@string/best_match"
+						android:paddingStart="16dp"
+						android:text="Highest  Price"
 						android:textColor="@color/radio_selector"
 						android:textStyle="bold"
 						/>

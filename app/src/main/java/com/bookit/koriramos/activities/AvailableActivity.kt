@@ -2,6 +2,7 @@ package com.bookit.koriramos.activities
 
 import android.os.Bundle
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -19,6 +20,9 @@ class AvailableActivity : AppCompatActivity() {
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
 		setContentView(R.layout.activity_available)
+		intent.extras?.getString("title")?.let {
+			findViewById<TextView>(R.id.textView9).text=it
+		}
 		carsRecyclerView = findViewById(R.id.availableCarsRecyclerView)
 		val staggeredGridLayoutManager = StaggeredGridLayoutManager(2, LinearLayoutManager.VERTICAL)
 		carsRecyclerView.layoutManager = staggeredGridLayoutManager

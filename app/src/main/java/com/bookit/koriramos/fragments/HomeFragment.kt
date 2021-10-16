@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
-import android.widget.Toast
+import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -16,7 +16,6 @@ import com.bookit.koriramos.R
 import com.bookit.koriramos.activities.AvailableActivity
 import com.bookit.koriramos.adapter.CarsRecyclerviewAdapter
 import com.bookit.koriramos.viewmodels.MainViewModel
-import com.bumptech.glide.Glide
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class HomeFragment : Fragment() {
@@ -42,6 +41,13 @@ class HomeFragment : Fragment() {
 			LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
 		
 		with(view) {
+			findViewById<TextView>(R.id.carrageTv).setOnClickListener {
+				startActivity(Intent(requireContext(), AvailableActivity::class.java).putExtra("title","My Garage"))
+			}
+			
+			findViewById<TextView>(R.id.moresTv).setOnClickListener {
+				startActivity(Intent(requireContext(), AvailableActivity::class.java).putExtra("title","Top Deals"))
+			}
 			findViewById<ConstraintLayout>(R.id.available).setOnClickListener {
 				startActivity(Intent(requireContext(), AvailableActivity::class.java))
 			}

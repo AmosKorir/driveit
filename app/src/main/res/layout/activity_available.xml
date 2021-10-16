@@ -8,6 +8,16 @@
 		tools:context=".activities.AvailableActivity"
 		>
 	<ImageView
+			android:id="@+id/imageView8"
+			android:layout_width="300dp"
+			android:layout_height="300dp"
+			android:layout_marginEnd="-100dp"
+			android:layout_marginTop="-60dp"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintTop_toTopOf="parent"
+			app:srcCompat="@drawable/group_45mk"
+			/>
+	<ImageView
 			android:id="@+id/backArrow"
 			android:layout_width="32dp"
 			android:layout_height="32dp"
@@ -25,6 +35,7 @@
 			android:layout_height="wrap_content"
 			android:layout_marginStart="16dp"
 			android:layout_marginTop="34dp"
+			android:fontFamily="@font/ubuntu_bold"
 			android:text="@string/availabe_cars"
 			android:textColor="@color/black"
 			android:textSize="24sp"
